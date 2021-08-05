@@ -1,4 +1,4 @@
- ```
+```
  1019  ls
  1020  cd 00-Setup/
  1021  ./install-docker.sh 
@@ -32,4 +32,33 @@
  1049  ls
  1050  history 
  1051  history  > 01-Docker-Commands/README.md
+ 1052  git add . ; git commit -m "01-Docker"; git push
+```
+
+
+``` 
+ 1053  ls
+ 1054  docker images 
+ 1055  docker pull centos
+ 1056  docker images 
+ 1057  docker run centos:7  date
+ 1058  docker images 
+ 1059  docker ps -a 
+ 1060  docker run centos:7  date
+ 1061  docker ps -a 
+ 1062  docker run centos:7  ps -ef
+ 1063  docker ps -a 
+ 1064  docker run amitvashist7/k8s-tiny-web
+ 1065  docker run -d amitvashist7/k8s-tiny-web
+ 1066  docker images 
+ 1067  docker pull amitvashist7/apache-ex4
+ 1068  docker login 
+ 1069  docker pull amitvashist7/apache-ex4
+ 1070  docker logout 
+ 1071  docker images 
+ 1072  ls
+ 1073  history > 01-Docker-Commands/README.md 
+ 1074  vim 01-Docker-Commands/README.md
+ 1075  ls
+ 1076  git add . ; git commit -m "01-Docker"; git push 
 ```
