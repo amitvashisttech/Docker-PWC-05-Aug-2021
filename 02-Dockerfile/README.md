@@ -41,3 +41,46 @@
  2127  curl  172.17.0.5:8081/hello
  2128  curl  172.17.0.5:8081/info
 ```
+
+```
+2140  ls
+ 2141  docker ps
+ 2142  curl  172.17.0.5:8081/info
+ 2143  curl  172.17.0.5:8081
+ 2144  curl  172.17.0.4
+ 2145  ip addr
+ 2146  docker network ls
+ 2147  docker network inspect 9c9176a54d13
+ 2148  docker ps
+ 2149  docker kill test-2 test-1
+ 2150  docker ps
+ 2151  docker ps -a
+ 2152  docker network inspect 9c9176a54d13
+ 2153*
+ 2154  docker run -d --name python-2 -p 8080:8081 python-web-app:v1
+ 2155  docker ps
+ 2156  curl localhost
+ 2157  curl localhost:8080
+ 2158  ip addr
+ 2159  docker ps
+ 2160  systemctl status docker
+ 2161  docker run -d --name python-3 -p 8080:8081 python-web-app:v1
+ 2162  docker run -d --name python-4 -P python-web-app:v1
+ 2163  docker ps
+ 2164  ls
+ 2165  cd 02-Dockerfile/
+ 2166  ls
+ 2167  cd python-web-app/
+ 2168  ls
+ 2169  cd ..
+ 2170  ls
+ 2171  docker images
+ 2172  docker run -d --name test-apache-1 -P myapache:v1
+ 2173  docker run -d --name test-apache-1 -P myapache:v2
+ 2174  docker run -d --name test-apache-2 -P myapache:v2
+ 2175  docker run -d --name test-apache-3 -P myapache:v3
+ 2176  docker ps
+ 2177  docker run -d --name test-apache-4 -p 8082:80  myapache:v1
+ 2178  docker run -d --name test-apache-5 -p 8083:80  myapache:v2
+ 2179  docker ps
+```
