@@ -26,3 +26,18 @@
  2063  curl 172.17.0.2
  2064  curl 172.17.0.3
 ```
+
+```
+2117  docker build -t python-web-app:v1 .
+ 2118  docker images
+ 2119  docker run -d --name python-1 python-web-app:v1
+ 2120  docker ps
+ 2121  docker inspect python-1
+ 2122  curl  172.17.0.5
+ 2123  docker ps
+ 2124  curl  172.17.0.5:8081
+ 2125  cat app.py
+ 2126  curl  172.17.0.5:8081
+ 2127  curl  172.17.0.5:8081/hello
+ 2128  curl  172.17.0.5:8081/info
+```
