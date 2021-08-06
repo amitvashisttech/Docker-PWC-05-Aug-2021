@@ -84,3 +84,34 @@
  2178  docker run -d --name test-apache-5 -p 8083:80  myapache:v2
  2179  docker ps
 ```
+
+```
+2184  git add . ; git commit -m "Expose"; git push
+ 2185  ls
+ 2186  docker images
+ 2187  docker push python-web-app:v1
+ 2188  docker login
+ 2189  docker push python-web-app:v1
+ 2190  docker images
+ 2191  docker tag ce738ee1dfcf amitvashist7/python-web-app:v1
+ 2192  docker images
+ 2193  docker push amitvashist7/python-web-app:v1
+ 2194  docker logout
+ 2195  ls
+ 2196  docker imags
+ 2197  docker images
+ 2198  docker kill $(docker ps -aq)
+ 2199  docker rm $(docker ps -aq)
+ 2200  ls
+ 2201  docker images
+ 2202  docker rmi ce738ee1dfcf
+ 2203  docker rmi ce738ee1dfcf -force
+ 2204  docker rmi ce738ee1dfcf --force
+ 2205  docker images
+ 2206  docker logut
+ 2207  docker logout
+ 2208  docker run -d --name test-1-py amitvashist7/python-web-app:v1
+ 2209  docker ps
+ 2210  curl 172.17.0.2:8081
+ 2211  curl 172.17.0.2:8081/info
+```
