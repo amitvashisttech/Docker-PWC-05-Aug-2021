@@ -17,4 +17,12 @@
  2020  curl 172.17.0.2
 ```
 
-
+```
+ 2058  cd 02-Dockerfile/apache/v2
+ 2059  docker build -t myapache:v2 .
+ 2060  docker images
+ 2061  docker run -d --name test-2 myapache:v2
+ 2062  docker ps
+ 2063  curl 172.17.0.2
+ 2064  curl 172.17.0.3
+```
